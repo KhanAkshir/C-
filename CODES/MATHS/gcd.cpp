@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int gcd(int a,int b)
+{
+    int r;
+    if(a==0)
+    {
+        return b;
+        
+    }
+    if(b==0)
+    {
+        return a;
+    }
+    else
+    {
+        while(a%b!=0)
+        {
+             r=a%b;
+             
+             a=b;
+             
+             b=r;
+
+        }
+       
+    }
+     return b;
+
+}
+int main()
+{
+    cout<<gcd(20,90);
+   
+
+
+    return 0;
+}
